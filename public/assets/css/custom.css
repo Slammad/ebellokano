@@ -65,7 +65,7 @@ body {
 	line-height: 24px;
 	color: #7e7e7e;
 	font-size: 14px;
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 	font-weight: 400;
 	letter-spacing: 1px;
 }
@@ -184,7 +184,7 @@ a, a:focus, a:active, a:link, img {
 a {
 	cursor: pointer;
 	text-decoration: none;
-	color: #6d6d6d;
+	color: black;
 	transition: all 0.25s ease 0s;
 	-moz-transition: all 0.25s ease 0s;
 	-webkit-transition: all 0.25s ease 0s;
@@ -246,7 +246,7 @@ ul {
 
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: #222;
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 	font-weight: 400;
 	margin-top: 0px;
 	margin-bottom: 10px;
@@ -1317,7 +1317,7 @@ header {
 	font-weight: 400;
 	color: #fff;
 	font-size: 14px;
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 	text-decoration: none;
 }
 .navbar-nav > li:first-child > a{
@@ -1479,7 +1479,7 @@ header {
 .cart-dropdown .cart-price {
 	font-weight: 500;
 	font-size: 16px;
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 }
 .account-link-dropdown {
 	width: 280px;
@@ -2129,7 +2129,7 @@ _______________________________________________________*/
 	color: #000;
 }
 .price-box {
-	/* font-family: 'Raleway', sans-serif; */
+	/* font-family: Roboto,Helvetica,Arial,sans-serif; */
 	/* padding-bottom: 10px;  */
 }
 .product-item-details .price-box .price {
@@ -2765,7 +2765,7 @@ _______________________________________________________*/
 	height: 70px;
 	position: absolute;
 	top: 0px;
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	color: #fff;
@@ -2971,7 +2971,7 @@ _______________________________________________________*/
 	font-size: 14px;
 	font-weight: 700;
 	margin-right: 5px;
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 }
 .pro-detail-info .rating-summary-block {
 	padding: 0;
@@ -3201,7 +3201,7 @@ _______________________________________________________*/
 	-webkit-border-radius: 0;
 	-o-border-radius: 0;
 	border: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 	font-size: 20px;
 	letter-spacing: -0.5px;
 	color: #000;
@@ -3664,7 +3664,7 @@ table.table {
 	background: url(../images/404-bg.jpg) no-repeat scroll left top;
 }
 .error-block-detail .main-error-text {
-	font-family: 'Raleway', sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 	font-size: 230px;
 	color: #222;
 	line-height: 180px;
