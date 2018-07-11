@@ -32,7 +32,7 @@
                             <div class="sidebar-contant">
                                 <ul>
                                     @foreach($category as $cat)
-                                        <li><a href="{{ route('category',['id'=>$cat->id,'slug'=>str_slug($cat->name)]) }}"><i class="fa fa-link"></i>{{ $cat->name }}</a></li>
+                                        <li><a href="{{ route('category',['id'=>$cat->id,'slug'=>str_slug($cat->name)]) }}"><i class="{{ $cat->code }}"></i>{{ $cat->name }}</a></li>
                                     @endforeach
                                 </ul>
                             </div>
@@ -120,7 +120,7 @@
 
                                 @foreach($fPro as $fp)
 
-                                    <div class="col-md-4 col-xs-6 plr-20">
+                                    <div class="col-md-3 col-md-offset-1 col-xs-6 plr-20">
 
                                         <div class="product-item {{ $fp->stock == 0 ? 'sold-out' : ''}}">
                                             <div class="sale-label"><span>Sale</span></div>

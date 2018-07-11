@@ -29,46 +29,8 @@
     <section class="pt-50">
         <div class="container">
             <div class="row">
-                <div class="col-md-3  mb-xs-30">
-                    <div class="sidebar-block">
-                        <div class="sidebar-box listing-box mb-40"> <span class="opener plus"></span>
-                            <div class="sidebar-title">
-                                <h3>Categories</h3>
-                            </div>
-                            <div class="sidebar-contant">
-                                <ul>
-                                    @foreach($category as $cat)
-                                        <li><a href="{{ route('category',['id'=>$cat->id,'slug'=>str_slug($cat->name)]) }}"><i class="fa fa-link"></i>{{ $cat->name }}</a></li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    @if($ad2 != null)
-                        <div class="sidebar-box mb-30 visible-sm visible-md visible-lg hidden-xs">
-                            @if($ad2->advert_type == 1)
-                                <a href="{{ $ad1->link }}"  target="_blank"><img class="center-block" src="{{ asset('assets/images/advertise') }}/{{ $ad2->val1 }}" alt="{{ $ad2->title }}"></a>
-                            @else
-                                {!! $ad2->val2 !!}
-                            @endif
-                        </div>
-                    @endif
-                    <div class="sidebar-box gray-box mb-40"> <span class="opener plus"></span>
-                        <div class="sidebar-title">
-                            <h3>Price range</h3>
-                        </div>
-                        <div class="sidebar-contant">
-                            <div class="price-range mb-30">
-                                <form action="{{ route('price-range') }}" method="get">
-                                    <input class="price-txt" name="range_price" type="text" id="amount">
-                                    <div id="slider-range"></div><br>
-                                    <button type="submit" class="btn btn-color btn-block btn-sm" style="font-size: 16px">Filter With Price</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-sm-5 mb-xs-30">
+              
+                <div class="col-md-5 col-md-offset-2 col-sm-5 mb-xs-30">
                     <div class="fotorama" data-nav="thumbs" data-allowfullscreen="native">
                         @foreach($productImage as $pi)
                         <a href="#"><img src="{{ asset('assets/images/product') }}/{{ $pi->name }}" alt="{{ $product->name }}"></a>

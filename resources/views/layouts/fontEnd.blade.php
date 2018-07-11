@@ -102,7 +102,7 @@
                     <div class="row">
                         <div class="col-md-7 col-sm-6 col-xs-6">
                             <div class="navbar-header">
-                                <a class="navbar-brand page-scroll" href="{{ route('home') }}"> <img alt="{{ $basic->title }}" src="{{ asset('assets/images/logo.png') }}"> </a>
+                                <a class="navbar-brand page-scroll" href="{{ route('home') }}"> <img style="height:60px;width:110px;border-radius:6px;" alt="{{ $basic->title }}" src="{{ asset('assets/images/logo.png') }}"> </a>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-6 col-xs-6">
@@ -228,7 +228,7 @@
                 <div class="col-md-12">
                     <div id="brand-logo" class="owl-carousel align_center">
                         @foreach($partners as $p)
-                            <div class=""><a><img src="{{ asset('assets/images/partner') }}/{{ $p->image }}" alt="{{ $p->name }}"/></a></div>
+                            <div class="ptnr"><a><img src="{{ asset('assets/images/partner') }}/{{ $p->image }}" alt="{{ $p->name }}"/></a></div>
                         @endforeach
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                     <div class="partners-carousel alt">
                         <div class="owl-carousel" id="partners-alt">
                             @foreach($paymentImage as $pt)
-                                <div><a><img src="{{ asset('assets/images/payment') }}/{{ $pt->image }}" alt="{{ $pt->name }}" width="90%"></a></div>
+                                <div><a><img class="" src="{{ asset('assets/images/payment') }}/{{ $pt->image }}" alt="{{ $pt->name }}" width="90%"></a></div>
                             @endforeach
                         </div>
                     </div>

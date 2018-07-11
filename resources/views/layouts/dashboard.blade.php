@@ -37,7 +37,7 @@
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><img src="{{ asset('assets/images/logo.png') }}" alt="Logo" width="50px"></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><img src="{{ asset('assets/images/logo.png') }}" alt="Logo" width="200px" height="45px"></span>
+          
         </a>
 
         <!-- Header Navbar -->
