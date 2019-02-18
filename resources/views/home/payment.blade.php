@@ -73,11 +73,11 @@
                                         <div class="payment-top-box">
                                             <div class="row">
                                                 @foreach($paymentMethod as $pm)
-                                                <div class="col-md-4 col-sm-6 mb-20">
-                                                    <div class="paypal-box">
-                                                        <img src="{{ asset('assets/images/payment') }}/{{ $pm->image }}">
+                                                <div class="col-md-4 col-sm-6 mb-20 col-md-offset-4">
+                                                
+                                                       
                                                         <a href="{{ route('payment-overview',['id'=>$pm->id,'orderNumber'=>$orderDetails->order_number]) }}" class="btn btn-color btn-block" style="border-radius: 3px;margin-top: 10px">Payment Now</a>
-                                                    </div>
+                                                  
                                                 </div>
                                                 @endforeach
                                             </div>

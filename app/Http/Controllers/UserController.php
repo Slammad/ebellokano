@@ -223,7 +223,7 @@ class UserController extends Controller
                 $product->stock = $product->stock - $c->qty;
                 $product->save();
             }
-            $this->sendInvoice(Auth::user()->id,$r->id);
+          
             session()->flash('message','Order Submitted Successfully.');
             session()->flash('type','success');
             return redirect()->route('payment',$r->order_number);
@@ -235,7 +235,7 @@ class UserController extends Controller
         $data['paymentMethod'] = PaymentMethod::whereStatus(1)->get();
         $data['order_id'] = $orderId;
         $data['orderDetails'] = Order::whereOrder_number($orderId)->first();
-        Cart::destroy();
+   
         return view('home.payment',$data);
     }
 
